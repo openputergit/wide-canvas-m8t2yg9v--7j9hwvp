@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskHub - Your Collaborative Workspace</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #2C3E50 0%, #3498DB 100%);
+        }
+        .task-card:hover {
+            transform: translateY(-2px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="gradient-bg text-white shadow-lg">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-4">
+                    <h1 class="text-2xl font-bold">TaskHub</h1>
+                    <div class="hidden md:flex space-x-6">
+                        <a href="#" class="hover:text-gray-200">Dashboard</a>
+                        <a href="#" class="hover:text-gray-200">Projects</a>
+                        <a href="#" class="hover:text-gray-200">Teams</a>
+                        <a href="#" class="hover:text-gray-200">Calendar</a>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <button class="bg-white text-blue-600 px-4 py-2 rounded-lg font-medium hover:bg-gray-100">Sign Up</button>
+                    <button class="text-white border border-white px-4 py-2 rounded-lg font-medium hover:bg-white hover:text-blue-600">Login</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="container mx-auto px-4 py-16">
+        <div class="text-center max-w-3xl mx-auto">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">Collaborate, Create, and Connect</h2>
+            <p class="text-gray-600 text-lg mb-8">Join millions of professionals who trust TaskHub to manage their work, connect with teams, and drive productivity.</p>
+            <div class="flex flex-col md:flex-row justify-center gap-4">
+                <button class="gradient-bg text-white px-8 py-3 rounded-lg font-medium hover:opacity-90">Get Started for Free</button>
+                <button class="bg-white text-gray-800 px-8 py-3 rounded-lg font-medium border border-gray-300 hover:bg-gray-50">Watch Demo</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Grid -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="task-card p-6 bg-gray-50 rounded-xl">
+                    <i class="bi bi-calendar3 text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Smart Scheduling</h3>
+                    <p class="text-gray-600">Automatically organize your tasks and meetings with AI-powered scheduling.</p>
+                </div>
+                <div class="task-card p-6 bg-gray-50 rounded-xl">
+                    <i class="bi bi-people text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Team Collaboration</h3>
+                    <p class="text-gray-600">Work seamlessly with your team in real-time, anywhere in the world.</p>
+                </div>
+                <div class="task-card p-6 bg-gray-50 rounded-xl">
+                    <i class="bi bi-graph-up text-4xl text-blue-600 mb-4"></i>
+                    <h3 class="text-xl font-semibold mb-2">Analytics & Insights</h3>
+                    <p class="text-gray-600">Track progress and get detailed insights about your team's performance.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="gradient-bg py-16">
+        <div class="container mx-auto px-4 text-center text-white">
+            <h2 class="text-3xl font-bold mb-6">Ready to Transform Your Workflow?</h2>
+            <p class="mb-8 text-lg">Join over 100,000+ teams already using TaskHub</p>
+            <button class="bg-white text-blue-600 px-8 py-3 rounded-lg font-medium hover:bg-gray-100">Start Free Trial</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">TaskHub</h3>
+                    <p class="text-gray-400">Making collaboration seamless and productive.</p>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Product</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Features</a></li>
+                        <li><a href="#" class="hover:text-white">Pricing</a></li>
+                        <li><a href="#" class="hover:text-white">Security</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">About</a></li>
+                        <li><a href="#" class="hover:text-white">Careers</a></li>
+                        <li><a href="#" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Blog</a></li>
+                        <li><a href="#" class="hover:text-white">Help Center</a></li>
+                        <li><a href="#" class="hover:text-white">Community</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 TaskHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenu = document.querySelector('.mobile-menu');
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            
+            if(mobileMenuBtn) {
+                mobileMenuBtn.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                });
+            }
+        });
+
+        // Simple animation for cards
+        const cards = document.querySelectorAll('.task-card');
+        cards.forEach(card => {
+            card.addEventListener('mouseover', () => {
+                card.style.transform = 'translateY(-5px)';
+                card.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+            });
+            card.addEventListener('mouseout', () => {
+                card.style.transform = 'translateY(0)';
+                card.style.boxShadow = 'none';
+            });
+        });
+    </script>
+<script>document.body.addEventListener('wheel', e => { if (!e.ctrlKey) return; e.preventDefault(); return }, { passive: false })</script>
+	</body>
+</html>
